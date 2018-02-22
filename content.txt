@@ -1,0 +1,14 @@
+Tim-Berners-Lee = lead developer of HTTP
+WWW - resources that an be accessed with the use of the internet
+URL - Uniform Resource Locator - unique identification of a web
+DNS - Domain Name System - where the resource is mapped
+https - secure transport of data
+General headers - connection,date,upgrade
+REquest headers - from client
+response headers - from servers
+Status Codes
+Informational	- 1xx
+Success		- 2xx
+Redirection	- 3xx
+Client Error	- 4xx
+Server Error	- 5xx
