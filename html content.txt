@@ -1,0 +1,17 @@
+html - contains the structure and content of webpages.
+It is an application of a standard known as the Standard Generalized 
+Markup Language (SGML).
+Developed at CERN, IETF, W3C, and WHATWG.
+html elements and attribute values must all be in lowercase.
+
+XML - stands for extensible markup language. It was made to be self-descriptive
+      meaning a developer can create their own elements in this language.
+
+SGML - it serves as a general standard for how to format and specify 
+       tags in markup languages such as HTML and XML
+
+Ian Hickson - formed WHATWG and created the specification for HTML 5.
+
+HTML Living Standard - a continuously updated standard with new features added
+                       by web developers at a rate that keeps it somewhat ahead
+                       of implementations but not so much.
