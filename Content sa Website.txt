@@ -1,0 +1,20 @@
+Hypermedia-it is used to link two documents.
+World Wide Web-it is used to connect Internet that allows share documents in other web resources.
+Kinds of  HTTP Status Code:
+
+Informational 1xx 
+-While still connecting it already gives you the information.
+
+Succesful 2xx
+-It already establishes a connection but there is still something happening like it is still updating or there
+wasn't any content to send back. 
+
+Redirection 3xx
+-if the error starts with 3 means it redirects or assigning to a new different networks.
+
+Client Side Error 4xx
+-means there is an error in the client side where the requested resources
+is not available
+
+Server Client Error 5xx
+-It shows failed databases connection or maybe the server side is down
