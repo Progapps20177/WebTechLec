@@ -1,0 +1,124 @@
+1xx
+
+a. 100 Continue
+
+ - It is basically saying to go continue your work because the server already received your request
+and if ever the request is completed you can just ignore this warning and may proceed.
+
+b. 101 Switching Protocol
+
+ - It means that it will comply to the client request to switch protocol and the server already 
+understand and will already do it.
+
+c. 102 Processing (WebDAV)
+
+ - It means it already receive the client request but it can not find an appropriate response for
+the given request.
+
+2xx
+
+a. 200 OK
+
+ - It means the client request is successfully received by the server.
+
+b. 201 Created
+
+ - It means that server response has fulfilled the client request.
+
+c. 202 Accepted 
+
+ - It means that the request is already accepted by the server but it is still processing and it may not 
+be follow up. 
+
+d. 203 Non-Authoritative Information 
+
+ - It means that processed is successful but the response is not from them but from another website.
+
+e. 204 No content
+ - It means that it already processed the content but it cannot response to the request because it does not 
+ have anything to return.
+
+f. 205 Reset Content 
+ 
+ - It is the same us 204 but it needs the client who request to reset the document view.
+ 
+g. 206 Partial Content 
+ 
+ - Range header must be use for any interruption when downloading.
+ 
+h. 207 Multi-status
+
+ - It can have more than one status code that can be applied. An example of that is when a website is getting a 
+ resource from different website.
+ 
+i. 208 Already Reported (WebDAV)
+ 
+ - The WebDAV has already been reported and should not included again.
+
+3xx
+
+a. 300 Multiple Choices
+ - It give different option for the client to follow.
+ 
+b. 301 Moved Permanently
+
+ - It indicate to all request in the future to be moved in the given URI.
+ 
+c. 302 Found
+
+ - The resource is on the different URI. Also because redirection will happen it still need to proceed with the
+request-URI for future sake.
+
+d. 303 See Other 
+ 
+ - It means because the response is found in different URI it should use a GET method to retrieve resource.
+ 
+e.  304 Not Modified
+
+ - Means that in the last request it has not been modified.
+
+f. 305 Use Proxy
+
+ - The resources must only be access by using the given proxy.
+ 
+g. 306 (Unused)
+
+ - No longer used.
+
+h. 307 Temporary Redirect 
+
+ - The requested resource reside is just temporarily in different URI.
+
+i. 308 Permanent Redirect (experimental)
+
+ - Using different URI request must be repeated in that URI.
+
+
+ 
+ 
+ 
+5xx
+
+a. 500 Internal Server Error
+
+ - There is an unexpected error and website does not know what is the appropriate Status Code to be use.
+ 
+b. 501 Not Implemented 
+
+ - It does not know how to respond to the request or it doesn't know how request method works.
+ 
+c. 502 Bad Gateway 
+
+ - Invalid response from upstream server.
+
+d. 503 Service Unavailable 
+
+ - Unavailable Server because of overloading or maintenance.
+ 
+e. 504 Gateway Timeout
+
+ - The upstream server did not respond to the server in time.
+
+d. 505 HTTP Version Not Support 
+
+ - The version of the http is not supported by the server.
