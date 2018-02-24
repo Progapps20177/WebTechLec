@@ -2,12 +2,13 @@ HTTP Request Methods
 1. GET
 - This method is a request used to retrieve specified data or resource
 2. HEAD
--  
-3.
+- This method is a request used to retrieve specified data or resource
+just like the GET method but it doesn't have response message body.
+3. POST
 -
-4.
--
-5.
+4. PUT
+- 
+5. 
 -
 6.
 -
