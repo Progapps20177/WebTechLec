@@ -1,0 +1,26 @@
+401 Unauthorized
+-The request of the user need to be authorized.It must send WWW-Authenticate header field that will accept the user's request.
+
+402 Payment Required.
+-The code was unavailable because it might be use for the digital cash or micropayment scheme that's why it is reserve for future used.
+
+403 Forbidden
+-The server was about to fullfil the user's request but it was neglected.It should not repeatedly request and authorized in the server.
+
+404 Not Found
+-The server cannot found that match to the Request-URI to any user request and no indication if this is a permanent or temporary.
+
+405 Method Not Allowed	
+-The Request-URI was not allowing for the methods specified in the Request-Line.
+
+406 Not Acceptable
+-
+
+407 Proxy Authenticatation Required
+-Same code in 401 Unauthorized but the user need to authenticate the proxy itself.
+
+408 Request Timeout
+-The user didn't catch up with his/her request when the server was prepared to wait.
+
+409 Conflict
+-
