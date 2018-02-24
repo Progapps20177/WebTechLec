@@ -1,0 +1,10 @@
+410 - Gone 
+Resource in the server is no longer available
+411 - Length Required
+A specific length is required for the client to access the server
+413 - Request Entity Too Large
+The request is larger than what the server can process.
+414 - Request-URI Too Long
+The URI is longer than what the server can interpret
+415 - Unsupported Media Type
+The request is in a format not supported by the server
