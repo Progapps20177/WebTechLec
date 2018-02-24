@@ -1,0 +1,8 @@
+XHTML
+
+ - It conforms with the XHTML 1.0 documents and it very strict with its rules.
+ - Your document in XHTML must follow the constraints given in DTDs, The document of the XHTML
+root must be html and inside the document it must include xmlns declaration.
+ - Because developers tends not to change what they use to have the group was divided in to two
+the first group develops the xhtml while the other go back to html4 and further improve it.
+ 
