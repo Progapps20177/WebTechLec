@@ -1,0 +1,38 @@
+HTMLDIFF - illustrate the differences between the HTML5 specification 
+           and HTML4 specification.
+		   
+HTML5
+A. Document Structure
+	1. DOCTYPE - first thing to be declared in an html document. Tells the browser the
+	             version of the written html page.
+	2. root element - the root element is the html element in the document.
+	      head element - the element that contains the metadata and is placed between the html and body tags.
+          metadata - means data about data. Examples of metadata tags include title, style, meta, link, base and script.
+      
+B. Document Components
+    1. DOCTYPE - The declaration of an html5 doctype is simply <!DOCTYPE html>
+		html 4.0.1 - has several doctype declarations called Data Type Definitions. There are three types of data type definitions, namely strict,
+		transitional and frameset.
+		html 4.0.1 strict - contains every html element and attribute but lacks presentational elements such as font. It doesn't allow the use of
+                            framesets.
+        html 4.0.1 transitional - contains every html element and attribute. Presentational elements are present in this definition but still 
+                                  doesn't allow framesets.
+        html 4.0.1 frameset - similar to transitional while also allowing the use of framesets.
+
+    2. Elements - consists of a beginning tag and end tag between them is the content.
+			a. Tags - keywords that tell a web browser how a page will format and display the content.
+			b. Content
+				b1. Content Models - describe the contents of an element.
+									example: Document Object Model Tree - structures the elements of an markup language document as a tree.
+                b2. Void elements - these are elements that require no end tag.
+
+    3. custom data attributes - also known as data-* attribute. This allows to store custom data solely on a private page or application.
+    
+    4. WAI-ARIA - more known as the Accessible Rich Internet Applications Suite, provides a way for Web content to be more available to people with disabilities.
+	            - tags particular components with their role.
+    5. Scalable Vector Graphics - they define vector-based graphics. They retain a very high quality even when zoomed in.
+
+Character entity references - A few examples in HTML are &, !, -, = and several others.
+Comments - comments are added to an html document using this syntax; <!-- Write your comments here -->
+HTML preprocessors - programs that take a data type then convert it to another. They notably take out the tedious task of having to 
+                     repetitively do the same tasks in html. Some popular examples of html preprocessors include Jade, HAML and Pug.
