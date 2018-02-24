@@ -1,0 +1,14 @@
+Not Acceptable 406
+-It cannot served the Accept-Charset and Accept-Language that will response the matching list of acceptable value was defined.
+
+Conflict 409
+-Allowing the user request if the user have an ability to resolve the conflict and resubmit the request.
+
+Precondition Field 412
+-Accessing to the target resources was denied for the user request.
+
+Requested Range Not Satistfiable 416
+-It is error response code where the server cannot serve requested ranges causes abort the operation.
+
+Expected Failed 417
+-the expection of the request's Expect header could not met with the server.
