@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+     <html>
+         <head>
+		 
+		    <meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		 
+				<title>Title</title>
+     <meta charset="UTF-8">
+				<title>Website</title>
+	<meta name="author" content="WebDev">
+	
+	 <style type="text/css">
+  
+	html{ 
+		font-family: Arial, Helvetica, sans-serif; color:#333; 
+	}
+
+	body { 
+		background:#ccc; margin:0; 
+	}
+	
+	#container { 
+		width:100%; 
+		margin:0 auto; 
+		background:#fff; 
+	}
+
+	#header { 
+		width:100%; 
+		height:80px; 
+		border-bottom:1px solid #c7c7c7; 
+		background:lightblue;
+	}
+ 
+	#logo { 
+		float:left; 
+		width:100px; 
+		height:40px; 
+		margin:20px; 
+		background:#ccc;
+	}
+		#logo.class{
+			height: 80px;
+			width: 80px;
+		}
+	
+	#top_info { 
+		float:right; 
+		width:100px; 
+		height:40px; e444444444444
+		background:#666; 
+		border:1px solid #c7c7c7; 
+		margin:10px; 
+	}
+	
+	#navbar{ 
+		height:300px; 
+		clear:both; 
+	}
+	
+	#navbar ul { 
+		margin:0; 
+		padding:0; 
+		list-style-type:none; 
+	}
+	
+	#navbar ul li { 
+		padding:10px; 
+		float:left; 
+	}
+	
+	#navbar ul li a { 
+		font-size:12px; 
+		float:left; 
+		float:left;
+		padding:0 0 0 20px; 
+		display:block;
+	}
+	
+	#banner { 
+		background:#666;
+		height:120px; 
+		padding:20px;
+		clear: both;
+	}
+	
+
+	#footer{ 
+		padding:20px; 
+		clear:both; 
+	}
+  
+	</style>
+		</head>
+		
+		<body>
+	<!-- container -->
+		<div id="container">
+		
+	<!--  header -->
+	<div id="header">
+		<div id="logo">
+			<img class="imeyj" src="logo.png">Logo
+		</div>
+			<div id="top_info">Top Info</div>
+				<div id="navbar">
+					<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Prelim</a></li>
+					<li><a href="#">Midterm</a></li>
+					<li><a href="#">Final</a></li>
+					</ul>
+				</div>
+	</div>
+		
+	<!-- content area -->
+	<div id="content_area">
+	<div id="banner">Contents of the Website</div>
+		<ul>
+			<li><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#statuscode">Http Status Code</button>
+			<div id="statuscode" class="collapse">
+			<h2>Http Status Code</h2>
+                <br>
+                <p>
+				Informational 1xx 
+					-While still connecting it already gives you the information.
+					
+				a. 100 Continue
+					- It is basically saying to go continue your work because the server already received your request
+				and if ever the request is completed you can just ignore this warning and may proceed.
+
+				b. 101 Switching Protocol
+					- It means that it will comply to the client request to switch protocol and the server already 
+				understand and will already do it.
+
+				c. 102 Processing (WebDAV)
+					- It means it already receive the client request but it can not find an appropriate response for
+				the given request.
+	
+				Succesful 2xx
+					-It already establishes a connection but there is still something happening like it is still updating or there
+						wasn't any content to send back. 
+						
+					a. 200 OK
+						- It means the client request is successfully received by the server.
+
+					b. 201 Created
+						- It means that server response has fulfilled the client request.
+
+					c. 202 Accepted 
+						- It means that the request is already accepted by the server but it is still processing and it may not 
+							be follow up. 
+
+					d. 203 Non-Authoritative Information 
+						- It means that processed is successful but the response is not from them but from another website.
+
+					e. 204 No content
+						- It means that it already processed the content but it cannot response to the request because it does not 
+							have anything to return.
+
+					f. 205 Reset Content 
+						- It is the same us 204 but it needs the client who request to reset the document view.
+ 
+					g. 206 Partial Content 
+						- Range header must be use for any interruption when downloading.
+ 
+					h. 207 Multi-status
+						- It can have more than one status code that can be applied. An example of that is when a website is getting a 
+							resource from different website.
+ 
+					i. 208 Already Reported (WebDAV)
+						- The WebDAV has already been reported and should not included again.
+		
+
+				Redirection 3xx	
+					-if the error starts with 3 means it redirects or assigning to a new different networks.
+
+					a. 300 Multiple Choices
+						- It give different option for the client to follow.
+ 
+					b. 301 Moved Permanently
+						- It indicate to all request in the future to be moved in the given URI.
+ 
+					c. 302 Found
+						- The resource is on the different URI. Also because redirection will happen it still need to proceed with the
+							request-URI for future sake.
+
+					d. 303 See Other 
+						- It means because the response is found in different URI it should use a GET method to retrieve resource.
+ 
+					e.  304 Not Modified
+						- Means that in the last request it has not been modified.
+					
+					f. 305 Use Proxy
+						- The resources must only be access by using the given proxy.
+ 
+					g. 306 (Unused)
+						- No longer used.
+
+					h. 307 Temporary Redirect 
+						- The requested resource reside is just temporarily in different URI.
+
+					i. 308 Permanent Redirect (experimental)
+						- Using different URI request must be repeated in that URI.
+
+				Client Side Error 4xx
+					-means there is an error in the client side where the requested resources
+						is not available
+
+					401 Unauthorized
+						-The request of the user need to be authorized.It must send WWW-Authenticate header field that will accept the user's request.
+
+					402 Payment Required.
+						-The code was unavailable because it might be use for the digital cash or micropayment scheme that's why it is reserve for future used.
+
+					403 Forbidden
+						-The server was about to fullfil the user's request but it was neglected.It should not repeatedly request and authorized in the server.
+
+					404 Not Found
+						-The server cannot found that match to the Request-URI to any user request and no indication if this is a permanent or temporary.
+
+					405 Method Not Allowed	
+						-The Request-URI was not allowing for the methods specified in the Request-Line.
+
+					406 Not Acceptable
+						--It cannot served the Accept-Charset and Accept-Language that will response the matching list of acceptable value was defined.
+
+					407 Proxy Authenticatation Required
+						-Same code in 401 Unauthorized but the user need to authenticate the proxy itself.
+
+					408 Request Timeout
+						-The user didn't catch up with his/her request when the server was prepared to wait.
+
+					409 Conflict
+						-Allowing the user request if the user have an ability to resolve the conflict and resubmit the request.
+					
+					410 - Gone 
+						Resource in the server is no longer available
+
+					411 - Length Required
+						A specific length is required for the client to access the server
+					
+					Precondition Field 412
+						-Accessing to the target resources was denied for the user request.
+
+					413 - Request Entity Too Large
+						The request is larger than what the server can process.
+					
+					414 - Request-URI Too Long
+						The URI is longer than what the server can interpret
+						
+					415 - Unsupported Media Type
+						The request is in a format not supported by the server.
+					
+					Requested Range Not Satistfiable 416
+						-It is error response code where the server cannot serve requested ranges causes abort the operation.
+					
+					Expected Failed 417
+						-the expection of the request's Expect header could not met with the server.
+
+				Server Client Error 5xx
+					-It shows failed databases connection or maybe the server side is down
+					
+					a. 500 Internal Server Error
+						- There is an unexpected error and website does not know what is the appropriate Status Code to be use.
+ 
+					b. 501 Not Implemented 
+						- It does not know how to respond to the request or it doesn't know how request method works.
+ 
+					c. 502 Bad Gateway 
+						- Invalid response from upstream server.
+
+					d. 503 Service Unavailable 
+						- Unavailable Server because of overloading or maintenance.
+					
+					e. 504 Gateway Timeout
+						- The upstream server did not respond to the server in time.
+
+					d. 505 HTTP Version Not Support 
+						- The version of the http is not supported by the server.
+				</p>
+			</article>	
+			
+			</div> </li>
+			
+			<li><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#requestmethod">Request Method</button>
+			<div id="requestmethod" class="collapse">
+			
+			                <h2>Request Method</h2>
+                <br>
+                <p>
+				HTTP Request Methods
+
+				1. GET
+					- This method is a request used to retrieve specified data or resource
+
+				2. HEAD
+					- This method is a request used to retrieve specified data or resource
+						just like the GET method but it doesn't have response message body.
+
+				3. POST
+					-
+					
+				4. PUT
+					- 
+
+				5. 
+					-
+					
+				6.
+					-
+					
+				Common Method Properties
+					1. Safe Methods
+						- These are read-only methods such as GET, HEAD, OPTIONS, and TRACE
+
+					2. Idempotent Methods
+						- These are single and multiple requests methods such as GET, HEAD,
+							OPTIONS, TRACE, PUT, and DELETE
+
+					3. Cacheable Methods
+						- These are used to store responses for future use such as GET, HEAD,
+							and POST
+				</p>
+		</article>
+			
+			
+			</div> </li>
+			
+			
+			<li>  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#htmlcontent">HTML Content</button>
+					<div id="htmlcontent" class="collapse">
+					<article class = "topic-style">
+		<!-- Files Used -->
+		<!-- html content.txt,content.txt,Content sa Website.txt, -->
+                <h2>HTML Content</h2>
+                <br>
+                <p>
+				html - contains the structure and content of webpages.
+					It is an application of a standard known as the Standard Generalized 
+					Markup Language (SGML).
+					Developed at CERN, IETF, W3C, and WHATWG.
+					html elements and attribute values must all be in lowercase.
+
+				XML - stands for extensible markup language. It was made to be self-descriptive
+					meaning a developer can create their own elements in this language.
+
+				SGML - it serves as a general standard for how to format and specify 
+					tags in markup languages such as HTML and XML
+
+				Ian Hickson - formed WHATWG and created the specification for HTML 5.
+
+				HTML Living Standard - a continuously updated standard with new features added
+                       by web developers at a rate that keeps it somewhat ahead
+                       of implementations but not so much.
+				
+				Tim-Berners-Lee = lead developer of HTTP
+				WWW - resources that an be accessed with the use of the internet
+				URL - Uniform Resource Locator - unique identification of a web
+				DNS - Domain Name System - where the resource is mapped
+				https - secure transport of data
+				General headers - connection,date,upgrade
+				Request headers - from client
+				response headers - from servers
+				Hypermedia-it is used to link two documents.
+
+
+				</p>
+		</article>
+		
+			</li>
+			<li><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#DoctypeContent">Doctype Content</button>
+				<div id="DoctypeContent" class="collapse">
+					
+			<article class = "topic-style">
+		<!-- Files Used -->
+		<!-- doctype content.txt, General Topics and HTTP versions.txt.docx	 -->
+		   <h2>Doctype Content</h2>
+                <br>
+                <p>
+				HTMLDIFF - illustrate the differences between the HTML5 specification 
+					and HTML4 specification.
+		   
+				HTML5
+					A. Document Structure
+						1. DOCTYPE - first thing to be declared in an html document. Tells the browser the
+							version of the written html page.
+
+						2. root element - the root element is the html element in the document.
+							head element - the element that contains the metadata and is placed between the html and body tags.
+							metadata - means data about data. Examples of metadata tags include title, style, meta, link, base and script.
+      
+					B. Document Components
+						1. DOCTYPE - The declaration of an html5 doctype is simply <!DOCTYPE html>
+							html 4.0.1 - has several doctype declarations called Data Type Definitions. There are three types of data type definitions, namely strict,
+								transitional and frameset.
+								
+							html 4.0.1 strict - contains every html element and attribute but lacks presentational elements such as font. It doesn't allow the use of
+								framesets.
+								
+							html 4.0.1 transitional - contains every html element and attribute. Presentational elements are present in this definition but still 
+                                doesn't allow framesets.
+								
+							html 4.0.1 frameset - similar to transitional while also allowing the use of framesets.
+
+						2. Elements - consists of a beginning tag and end tag between them is the content.
+							a. Tags - keywords that tell a web browser how a page will format and display the content.
+							
+							b. Content
+								b1. Content Models - describe the contents of an element.
+									example: Document Object Model Tree - structures the elements of an markup language document as a tree.
+									
+								b2. Void elements - these are elements that require no end tag.
+
+						3. custom data attributes - also known as data-* attribute. This allows to store custom data solely on a private page or application.
+    
+						4. WAI-ARIA - more known as the Accessible Rich Internet Applications Suite, provides a way for Web content to be more available to people with disabilities.
+								- tags particular components with their role.
+								
+						5. Scalable Vector Graphics - they define vector-based graphics. They retain a very high quality even when zoomed in.
+
+						Character entity references - A few examples in HTML are &, !, -, = and several others.
+						
+						Comments - comments are added to an html document using this syntax; <!-- Write your comments here -->
+						
+						HTML preprocessors - programs that take a data type then convert it to another. They notably take out the tedious task of having to 
+							repetitively do the same tasks in html. Some popular examples of html preprocessors include Jade, HAML and Pug.
+
+					</article>
+<!-- Files Used -->
+		<!--410,411,413,414,415.txt,HTTP Statu Code 406,409,412,416and 417.txt,
+		HTTP Statu Code 4xx Half Portion.txt,TOPIC StatusCodeErrors -->
+
+					
+					</div>
+			</li>
+			<li><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#xhtml">Doctype Content</button>
+			<div id="xhtml" class="collapse">
+			
+			<article class = "topic-style">
+		<!-- Files Used -->
+		<!-- TOPIC XHTML.txt -->
+                <h2>Xhtml</h2>
+                <br>
+                <p>
+				XHTML
+					- It conforms with the XHTML 1.0 documents and it very strict with its rules.
+					- Your document in XHTML must follow the constraints given in DTDs, The document of the XHTML
+						root must be html and inside the document it must include xmlns declaration.
+					- Because developers tends not to change what they use to have the group was divided in to two
+						the first group develops the xhtml while the other go back to html4 and further improve it.
+				</p>
+		</article>
+			</li>
+		</ul>
+		
+	<div id="content">Left Col Content
+
+	
+		</div>
+					
+	<div id="right_col">Right Col Content
+	
+			</div>
+	<!-- footer -->
+	<div id="footer">Footer</div>
+	
+		</div><!-- end container -->
+		</body>
+	</html>﻿
