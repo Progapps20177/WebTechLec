@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+     <html>
+         <head>
+				<title>Title</title>
+     <meta charset="UTF-8">
+				<title>Website</title>
+	<meta name="author" content="WebDev">
+		</head>
+		
+		<body>
+	<!-- container -->
+		<div id="container">
+		
+	<!--  header -->
+		<div id="header">
+	<div id="logo">Logo</div>
+	<div id="top_info">Top Info</div>
+	<div id="navbar">
+		<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Prelim</a></li>
+		<li><a href="#">Midterm</a></li>
+		<li><a href="#">Final</a></li>
+		</ul>
+	</div>
+		</div>
+		
+	<div id="content_area">
+	<div id="banner">Contents of the Website</div>
+		<ul>
+			<li><a href="#httpstatuscode ">Http Status Code</a></li>
+			<li><a href="#requestmethod">Request Method</a></li>
+			<li><a href="#htmlcontent">HTML Content</a></li>
+			<li><a href="#doctypecontent">Doctype Content</a></li>
+			<li><a href="#xhtml">Xhtml</a></li>
+		</ul>
+		
+	<div id="left_col">
+		<span class = "anchor" id = "httpstatuscode"></span>
+		<article class = "topic-style">
+		<!-- Files Used -->
+		<!--410,411,413,414,415.txt,HTTP Statu Code 406,409,412,416and 417.txt,
+		HTTP Statu Code 4xx Half Portion.txt,TOPIC StatusCodeErrors -->
+                <h2>Http Status Code</h2>
+                <br>
+                <p>
+				Informational 1xx <br>
+					-While still connecting it already gives you the information.<br><br>
+					
+				a. 100 Continue<br>
+					- It is basically saying to go continue your work because the server already received your request<br>
+				and if ever the request is completed you can just ignore this warning and may proceed.<br><br>
+
+				b. 101 Switching Protocol<br>
+					- It means that it will comply to the client request to switch protocol and the server already<br> 
+				understand and will already do it.<br><br>
+
+				c. 102 Processing (WebDAV)<br>
+					- It means it already receive the client request but it can not find an appropriate response for<br>
+				the given request.<br><br>
+	
+				Succesful 2xx<br>
+					-It already establishes a connection but there is still something happening like it is still updating or there<br>
+						wasn't any content to send back. <br><br>
+						
+					a. 200 OK<br>
+						- It means the client request is successfully received by the server.<br><br>
+
+					b. 201 Created<br>
+						- It means that server response has fulfilled the client request.<br><br>
+
+					c. 202 Accepted <br>
+						- It means that the request is already accepted by the server but it is still processing and it may not<br> 
+							be follow up.<br><br> 
+
+					d. 203 Non-Authoritative Information<br> 
+						- It means that processed is successful but the response is not from them but from another website.<br><br>
+
+					e. 204 No content<br>
+						- It means that it already processed the content but it cannot response to the request because it does not<br> 
+							have anything to return.<br><br>
+
+					f. 205 Reset Content <br>
+						- It is the same us 204 but it needs the client who request to reset the document view.<br><br>
+ 
+					g. 206 Partial Content <br>
+						- Range header must be use for any interruption when downloading.<br><br>
+ 
+					h. 207 Multi-status<br>
+						- It can have more than one status code that can be applied. An example of that is when a website is getting a<br> 
+							resource from different website.<br><br>
+ 
+					i. 208 Already Reported (WebDAV)<br>
+						- The WebDAV has already been reported and should not included again.<br>
+		
+
+				Redirection 3xx	<br>
+					-if the error starts with 3 means it redirects or assigning to a new different networks.<br><br>
+
+					a. 300 Multiple Choices<br>
+						- It give different option for the client to follow.<br><br>
+ 
+					b. 301 Moved Permanently<br>
+						- It indicate to all request in the future to be moved in the given URI.<br><br>
+ 
+					c. 302 Found<br>
+						- The resource is on the different URI. Also because redirection will happen it still need to proceed with the<br>
+							request-URI for future sake.<br><br>
+
+					d. 303 See Other <br>
+						- It means because the response is found in different URI it should use a GET method to retrieve resource.<br><br>
+ 
+					e.  304 Not Modified<br>
+						- Means that in the last request it has not been modified.<br><br>
+					
+					f. 305 Use Proxy<br>
+						- The resources must only be access by using the given proxy.<br><br>
+ 
+					g. 306 (Unused)<br>
+						- No longer used.<br><br>
+
+					h. 307 Temporary Redirect <br>
+						- The requested resource reside is just temporarily in different URI.<br><br>
+
+					i. 308 Permanent Redirect (experimental)<br>
+						- Using different URI request must be repeated in that URI.<br><br>
+
+				Client Side Error 4xx<br>
+					-means there is an error in the client side where the requested resources<br>
+						is not available<br><br>
+
+					a. 401 Unauthorized<br>
+						-The request of the user need to be authorized.It must send WWW-Authenticate header field that will accept the user's request.<br><br>
+
+					b. 402 Payment Required.<br>
+						-The code was unavailable because it might be use for the digital cash or micropayment scheme that's why it is reserve for future use.<br><br>
+
+					c. 403 Forbidden<br>
+						-The server was about to fullfil the user's request but it was neglected.It should not repeatedly request and authorized in the server.<br><br>
+
+					d. 404 Not Found<br>
+						-The server cannot found that match to the Request-URI to any user request and no indication if this is a permanent or temporary.<br><br>
+
+					e. 405 Method Not Allowed<br>	
+						-The Request-URI was not allowing for the methods specified in the Request-Line.<br><br>
+
+					f. 406 Not Acceptable<br>
+						-It cannot served the Accept-Charset and Accept-Language that will response the matching list of acceptable value was defined.<br><br>
+
+					g. 407 Proxy Authenticatation Required<br>
+						-Same code in 401 Unauthorized but the user need to authenticate the proxy itself.<br><br>
+
+					h. 408 Request Timeout<br>
+						-The user didn't catch up with his/her request when the server was prepared to wait.<br><br>
+
+					i. 409 Conflict<br>
+						-Allowing the user request if the user have an ability to resolve the conflict and resubmit the request.<br><br>
+					
+					j. 410 Gone<br> 
+						-Resource in the server is no longer available<br><br>
+
+					k. 411 Length Required<br>
+						-A specific length is required for the client to access the server<br><br>
+					
+					l. 412 Precondition Field<br>
+						-Accessing to the target resources was denied for the user request.<br><br>
+
+					m. 413 Request Entity Too Large<br>
+						-The request is larger than what the server can process.<br><br>
+					
+					n. 414 Request-URI Too Long<br>
+						-The URI is longer than what the server can interpret<br><br>
+						
+					o. 415 Unsupported Media Type<br>
+						-The request is in a format not supported by the server.<br><br>
+					
+					p. 416 Requested Range Not Satistfiable <br>
+						-It is error response code where the server cannot serve requested ranges causes abort the operation.<br><br>
+					
+					q. 417 Expected Failed <br>
+						-the expection of the request's Expect header could not met with the server.<br><br>
+
+				Server Client Error 5xx<br>
+					-It shows failed databases connection or maybe the server side is down<br><br>
+					
+					a. 500 Internal Server Error<br>
+						- There is an unexpected error and website does not know what is the appropriate Status Code to be use.<br><br>
+ 
+					b. 501 Not Implemented <br>
+						- It does not know how to respond to the request or it doesn't know how request method works.<br><br>
+ 
+					c. 502 Bad Gateway<br> 
+						- Invalid response from upstream server.<br><br>
+
+					d. 503 Service Unavailable<br> 
+						- Unavailable Server because of overloading or maintenance.<br><br>
+					
+					e. 504 Gateway Timeout<br>
+						- The upstream server did not respond to the server in time.<br><br>
+
+					d. 505 HTTP Version Not Support<br> 
+						- The version of the http is not supported by the server.<br><br>
+				</p>
+        </article>
+			
+		<span class = "anchor" id = "requestmethod"></span>
+		<article class = "topic-style">
+		<!-- Files Used -->
+		<!-- topic-request methods.txt -->
+                <h2>Request Method</h2>
+                <br>
+                <p>
+				HTTP Request Methods<br>
+
+				a. GET<br>
+					- This request method is used to retrieve specified data or resource<br><br>
+
+				b. HEAD<br>
+					- This request method is used to retrieve specified data or resource<br>
+						just like the GET method but it doesn't have response message body.<br><br>
+
+				c. POST<br>
+					- This request method is used to send data that is stored in a request body<br>
+					to the web server <br><br>
+					
+				d. PUT<br>
+					- This request method is similar to the POST method, but PUT is an<br>
+					Idempotent Method. <br><br>
+
+				e. DELETE<br>
+					- This request method is used to delete data in the URI<br><br>
+					
+				f. OPTIONS<br>
+					- This request method is used to retrieve the available options and<br>
+					their function.<br><br>
+				
+				g. TRACE<br>
+					- This request method is used to check the status of a request message. <br><br>
+					
+				Common Method Properties<br>
+					1. Safe Methods<br>
+						- These are read-only methods such as GET, HEAD, OPTIONS, and TRACE<br><br>
+
+					2. Idempotent Methods<br>
+						- These are single and multiple requests methods such as GET, HEAD,<br>
+							OPTIONS, TRACE, PUT, and DELETE<br><br>
+
+					3. Cacheable Methods<br>
+						- These are used to store responses for future use such as GET, HEAD,<br>
+							and POST<br><br>
+				</p>
+		</article>
+		
+		<span class = "anchor" id = "htmlcontent"></span>
+		<article class = "topic-style">
+		<!-- Files Used -->
+		<!-- html content.txt,content.txt,Content sa Website.txt, -->
+                <h2>HTML Content</h2>
+                <br>
+                <p>
+				html - contains the structure and content of webpages.<br>
+					It is an application of a standard known as the Standard Generalized<br> 
+					Markup Language (SGML).<br>
+					Developed at CERN, IETF, W3C, and WHATWG.<br>
+					html elements and attribute values must all be in lowercase.<br><br>
+
+				XML - stands for extensible markup language. It was made to be self-descriptive<br>
+					meaning a developer can create their own elements in this language.<br><br>
+
+				SGML - it serves as a general standard for how to format and specify<br> 
+					tags in markup languages such as HTML and XML<br><br>
+
+				Ian Hickson - formed WHATWG and created the specification for HTML 5.<br><br>
+
+				HTML Living Standard - a continuously updated standard with new features added<br>
+                       by web developers at a rate that keeps it somewhat ahead<br>
+                       of implementations but not so much.<br><br>
+				
+				Tim-Berners-Lee - lead developer of HTTP<br><br>
+				WWW - resources that an be accessed with the use of the internet<br><br>
+				URL - Uniform Resource Locator - unique identification of a web<br><br>
+				DNS - Domain Name System - where the resource is mapped<br><br>
+				https - secure transport of data<br><br>
+				General headers - connection,date,upgrade<br><br>
+				Request headers - from client<br><br>
+				response headers - from servers<br><br>
+				Hypermedia-it is used to link two documents.<br><br>
+
+
+				</p>
+		</article>
+		
+		</div>
+		
+	<div id="right_col">
+	
+		<span class = "anchor" id = "doctypecontent"></span>
+		<article class = "topic-style">
+		<!-- Files Used -->
+		<!-- doctype content.txt, General Topics and HTTP versions.txt.docx	 -->
+		   <h2>Doctype Content</h2>
+                <br>
+                <p>
+				HTMLDIFF - illustrate the differences between the HTML5 specification<br> 
+					and HTML4 specification.<br><br>
+		   
+				HTML5<br>
+					A. Document Structure<br>
+						1. DOCTYPE - first thing to be declared in an html document. Tells the browser the<br>
+							version of the written html page.<br><br>
+
+						2. root element - the root element is the html element in the document.<br>
+							head element - the element that contains the metadata and is placed between the html and body tags.<br>
+							metadata - means data about data. Examples of metadata tags include title, style, meta, link, base and script.<br><br>
+      
+					B. Document Components<br>
+						1. DOCTYPE - The declaration of an html5 doctype is simply <!DOCTYPE html><br>
+							html 4.0.1 - has several doctype declarations called Data Type Definitions. There are three types of data type definitions, namely strict,<br>
+								transitional and frameset.<br><br>
+								
+							html 4.0.1 strict - contains every html element and attribute but lacks presentational elements such as font. It doesn't allow the use of<br>
+								framesets.<br><br>
+								
+							html 4.0.1 transitional - contains every html element and attribute. Presentational elements are present in this definition but still<br> 
+                                doesn't allow framesets.<br><br>
+								
+							html 4.0.1 frameset - similar to transitional while also allowing the use of framesets.<br><br>
+
+						2. Elements - consists of a beginning tag and end tag between them is the content.<br>
+							a. Tags - keywords that tell a web browser how a page will format and display the content.<br><br>
+							
+							b. Content<br>
+								b1. Content Models - describe the contents of an element.<br>
+									example: Document Object Model Tree - structures the elements of an markup language document as a tree.<br><br>
+									
+								b2. Void elements - these are elements that require no end tag.<br><br>
+
+						3. custom data attributes - also known as data-* attribute. This allows to store custom data solely on a private page or application.<br>
+    
+						4. WAI-ARIA - more known as the Accessible Rich Internet Applications Suite, provides a way for Web content to be more available to people with disabilities.<br>
+								- tags particular components with their role.<br><br>
+								
+						5. Scalable Vector Graphics - they define vector-based graphics. They retain a very high quality even when zoomed in.<br><br>
+
+						6. Character entity references - A few examples in HTML are &, !, -, = and several others.<br><br>
+						
+						7. Comments - comments are added to an html document using this syntax; <!-- Write your comments here -->
+						
+						HTML preprocessors - programs that take a data type then convert it to another. They notably take out the tedious task of having to<br>  
+							repetitively do the same tasks in html. Some popular examples of html preprocessors include Jade, HAML and Pug.
+				</p>
+		</article>
+		
+		<span class = "anchor" id = "xhtml"></span>
+		<article class = "topic-style">
+		<!-- Files Used -->
+		<!-- TOPIC XHTML.txt -->
+                <h2>Xhtml</h2>
+                <br>
+                <p>
+				XHTML<br>
+					- It conforms with the XHTML 1.0 documents and it very strict with its rules.<br><br>
+					- Your document in XHTML must follow the constraints given in DTDs, The document of the XHTML<br>
+						root must be html and inside the document it must include xmlns declaration.<br><br>
+					- Because developers tends not to change what they use to have the group was divided in to two<br>
+						the first group develops the xhtml while the other go back to html4 and further improve it.<br><br>
+				</p>
+		</article>
+		
+			</div>
+	<!-- footer -->
+	<div id="footer">Footer</div>
+	
+		</div><!-- end container -->
+		</body>
+	</html>﻿
