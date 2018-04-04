@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS and Javascript</title>
+		<meta charset="UTF-8">
+	</head>
+	
+	<body>
+		<h1> Midterm Course Website </h1>
+			<h2> CSS </h2>
+				<p>Cascading Style Sheets (CSS) - used to specify presentation of HTML elements or present the design of a web page. 
+				E.g. layout, formatting, fonts, colors, etc.</p>
+				<p>- It was developed by Hakon Wium Lie and Bert Bos.</p>
+				<h3> Versions of CSS</h3>
+					<p> CSS Level 1 - the first version of CSS was released on 1996. The specification of CSS 1 at that time was for designing text, images, 
+					 and aligning for the elements. </p>
+					<p> CSS Level 2 - new features were added to CSS such as aural style sheets, use of media types and positioning for HTML elements. </p>
+					<p> CSS Level 2 Revision - this version focused on fixing the errors of CSS Level 2. Some fixes include removing useless features and 
+					adding browser extensions specifications. </p>
+					<p>CSS Level 3 - features in this version were called modules. Each module could add new features or extend the capabilities of CSS Level 2. </p>
+					<p>CSS Level 4 - the features of CSS 4 were split into level 4 modules.</p>
+				<h3>HTML Stylesheets</h3> 
+				<p> - sources of style for HTML documents.</p>
+					<p>1. Author Styles - specifically connected to the HTML itself</p>
+					<p>2. User Styles - can specify a user's preferred style information for a particular document. Very useful for any web user especially people with disabilities.</p>
+					<p>3. User Agent Styles - the default style of a browser.</p>
+					<p>4. Inline Styles - it is used for directly putting a CSS style for a specific type of HTML element.</p>
+					<p>5. Embedded Stylesheets - can define styles for a whole HTML document in one place. Simply add < script > in the head of an HTML document.</p>
+					<p>6. External Stylesheets - used to define a style for multiple HTML documents. The stylesheet is linked in the HTML file by using < link >. </p>
+				<h3>CSS Statements</h3>
+				<p> - follows the syntax of CSS to ensure readability.</p>
+				<p> - statements have two kinds: At-rules and Rulesets</p>
+				
+				<p>Basic Building Blocks are: </p>
+				<p>1. Property - the CSS identifier; defines what feature is used. </p>
+				<p>2. Value - describes how the feature is used in the browser. </p>
+				<p>CSS Declarations - it pairs the property and value that apply to all CSS elements.</p>
+				<p> - Uses a colon to distinguish the property and the value.</p>
+				<p> - Can use blocks to group the declarations.</p>
+				
+				<h4>At-rules</h4>
+				<p> - a statement that provides instructions on how CSS will perform or behave. Always starts with an @(at) sign. Examples of at-rules: </p>
+					<p>1. @charset - defines the character set.</p>
+					<p>2. @import - requests and includes an external CSS file.</p>
+					<p>3. @namespace - useful for applying CSS to XML HTML.</p>
+					<p>4. @media - targets styles to specific screens.</p>
+					<p>5. @supports - tests whether a feature is supported by the browser.</p>
+					<p>6. @page - defines styles for individual pages when printing the document.</p>
+					<p>7. @font-face - load custom fonts on a webpage.</p>
+					<p>8. @keyframes - does animation.</p>
+				
+				<h4>Rulesets</h4>
+				<p> - relates a collection of CSS declarations to a condition depicted by a selector. </p>
+				<p> - consists of a selector, followed by a brace-enclosed declaration block. The declaration block contains one or more declarations separated by semicolons.</p>
+				<br>
+				<p>> CSS Selector - patterns that are used to select the HTML elements you want to style.</p>
+				<p>> CSS Multinavigational - it provides for responsive and touch-friendly behavior in a website.</p>
+				<p>> nav - it shows in the section of the webpage providing links from a document to other documents.</p>
+				<br>
+				
+				<h3>CSS Position Property</h3>
+				<p>1. Fixed - the position is the same with the browser window.</p>
+				<p>2. Absolute - the elemet is positioned relative to its predecessor element.</p>
+				<p>3. Relative - element is in a normal position.</p>
+				<br>
+				
+				<p>> nth-child() Selector - every element that would match the number of children based on the group of siblings.</p>
+				<p>> hover Selector - used for pointing the element the user interacts with but it doesn't initiate it but rather it triggers over the element.</p>
+				<p>> target Selector - used for the styling of the current active element.</p>
+				<br>
+				
+				<h3>The Laws of UX</h3>
+				<p>- a collection of principles that adhere to a good design.</p>
+				<p>1. Fitts's Law - make elements have a large size and easy to select.</p>
+				<p>2. Hick's Law - divide long questions to be easily answered by users.</p>
+				<p>3. Jakob's Law - provide familiar design patterns.</p>
+				<p>4. Law of Prägnanz - complex shapes must have simplicity and order.</p>
+				<p>5. Law of Proximity - clusters of content are always grouped together.</p>
+				<p>6. Law of Similarity - text elements must be visually different from links and navigation systems.</p>
+				<p>7. Law of Uniform Connectedness - similar functions should be grouped through colors, shapes, etc.</p>
+				<p>8. Miller's Law - content is organized in groups of 5-9 items at a time.</p>
+				<p>9. Occam's Razor - remove unnecessary elements while retaining the the overall function.</p>
+				<p>10. Serial Position Effect - place the most important elements at the first and last.</p>
+				<br>
+				
+				<p>Asterisk (*) - the universal selector.</p>
+				<p>CSS Preprocessors - generates CSS using a custom language symbol that includes features that doesn't exist in pure CSS.</p>
+				<p>CSS Frameworks - provide predefined CSS design functionality that can be reused, extended, and customized, i.e. bootstrap</p>
+				<p>CSS Polyfills - provides features that a developer expects a browser to have natively.</p>
+				<br>
+				
+			<h2>Javascript</h2>
+				<p> - the programming language of HTML. It should be at the beginning of an HTML document to be prioritized more with the other javascript code.</p>
+				<p> - Core Javascript (Ecmascript) language and API</p>
+				<p> - (Traditional) Browser Object Model (BOM) API (non-standardized)</p>
+				<p> --- Window, Navigator, Screen, Location, History</p>
+				<br>
+				
+				<p>Server side Scripting - used for web browsers to produce a response for each client or user's request to the website.</p>
+				<p>Client side Scripting - runs the script in a browser. The source code from a web server is transferred to a user's computer then run in the browser.</p>
+				<p>Top-level code - executes as the script is loading.</p>
+				
+				<h3>Document Object Model (DOM) API</h3>
+					<p> - Node, Document, Element, Text, Attr, DocumentType, Comment, etc/</p>
+					<p> - Event, EventTarget, EventListener, etc.</p>
+					<p> - CSSStylesheet, CSSRule, etc.</p>
+					<p>> Node - primary type of DOM.</p>
+				<br>
+				
+				<h3>Miscellaneous Javascript Web APIs</h3>
+					<p>Geolocation, IndexedDB, Local Storage, Push Notifications, Service Workers, Web Sockets, Web workers, XML HTTP Request (AJAX), etc.</p>
+					<p> - most of the APIS are accessed from scripts via the global object window.</p>
+				
+				<h3>Document Object Model</h3>
+					<p> - API that allows access to the HTML document from within scripts associated with the web page.</p>
+					<p> - a parsed HTML document is represented by a DOM tree, which contains nodes representing elements, element attributes, textual content, and other HTML document components (e.g. DOCTYPE, comments, etc.).</p>
+					<p> - accessed via the Document object property of the global window object.</p>
+					<h4>Functionalities: </h4>
+						<p>1.) Retrieve references to nodes (or nodes collection)</p>
+						<p>a. getElementByID()</p>
+						<p>b. getElementsByTagName(), getElementsByClassName()</p>
+						<p>c. querySelector(), querySelectorAll()</p>
+						<br>
+						<p>2.) Traverse the DOM tree (from a given node)</p>
+						<p>a. parentNode, parentElement</p>
+						<p>b. childNodes, children</p>
+						<br>
+						
+				<p> *Whitespace is considered as text in making an HTML page. </p>
+	</body>
+</html>
