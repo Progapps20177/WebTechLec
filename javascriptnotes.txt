@@ -1,0 +1,18 @@
+JAVASCRIPT
+1. var
+2. let
+3. const
+
+Primitive types
+numbers, strings, boolean, null and undefined
+
+Numbers
+-division is always floating-point
+
+Strings
+1. single-quoted
+2. double-quoted
+3. template literals
+
+Boolean
+-True/False
