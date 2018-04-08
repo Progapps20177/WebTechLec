@@ -1,0 +1,32 @@
+event handling
+
+event propagation order(dom-compliant browsers)
+1. capturing phase netscape   addEventListener('click', hanler, true)
+2. at target 
+3. bubbling phase microsoft    addEventListener('click', handler)
+ 
+method 1 (inline html event attribute)
+
+method 2 (pre-DOM L2)
+
+method 3 (DOM L2 event registration)
+
+method 4 (Microsoft-specific, non-standard, IEv6-v10)
+
+method 1 registration explicitly in the call to the handler
+function handler(obj){}
+
+method 2 or 3 registration implicitly as the first argument off the event handler
+function handler(){
+var element = this;
+}
+
+event object properties and methods:
+bubbles
+eventphase
+target
+currenttarget
+preventdefault
+stoppropagation
+stopimeediatepropagation
+other event-specific information
