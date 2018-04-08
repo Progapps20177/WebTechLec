@@ -1,0 +1,41 @@
+console.log(person['name']); //accessing properties and methods
+console.log(person.address); //undefined properties and methods
+
+var subject = {}; //object literal syntax
+fdafadf = fdafdaf;
+adfaf = adffefdf;
+
+var anotherSubject = {
+afdaf: afdafdaf,
+afdafdaf: fadfdadfadf,
+}
+
+function Student(idno, name, course, year){ //object constructor function
+this.idno = idno;
+}
+
+*compatibility requirement across objects
+*upper camel case 
+
+var student = { /complex 
+name: {
+lastName: bond,
+firstName: james 
+}
+}
+
+//json object allows object cconversions to and from json-formatted strings
+-stringify
+
+miscellanious object APIs
+1.maps
+var elements = new Map();
+elements.set('O', 'Oxygen');
+*size, get, entries, keys, values
+
+2.set
+gets unique data
+
+3.weakmap
+
+4.weakset
