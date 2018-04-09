@@ -1,44 +1,40 @@
 1. CSS stands for C________ S_________ S__________ 
 answer: Cascading Style Sheets
 
-2. AJAX stands for ________ Javascript and XML
-answer: Asynchronous
+2. This CSS property is used to define transparency
+answer: opacity
 
 3. The three type of styles are ________, _______, and _______ styles.
 answer: Author, User, User agent
 
-4. How do we put javascript inside html.
-answer: <script></script>
+4. Bootstrap is an example of a CSS ________.
+answer: framework
 
-5. The appropriate section to put java script.
-answer: <head> and <body> section.
+5. The three CSS keywords are ________, ________, and _______.
+answer: inherit, initial, unset
 
-6. The sytax we use to put a javascript that is outside html.
-answer: <script src = "filename.js">
+6. The CSS rule-set composes of a ________ and a ________
+answer: selector, declaration block
 
-7. While loop syntax in javascript.
-answer: while(condition) or do{}while(condition);
+7. This CSS statement uses the @ sign.
+answer: at-rule
 
-8. Event click belongs to ________.
-answer:	MouseEvent
+8. This is used to apply CSS rules to a selected element/s
+answer: CSS selectors
 
-9. JavaScript Promise uses this function when
-the operation is successful.
-answer: resolve
+9. SASS is an example of a CSS ________.
+answer: preprocessor
 
-10. JavaScript Promise uses this function when 
+10. This CSS data type is used for distance values
+answer: length
+
+11. JavaScript Promise uses this function when 
 the operation failed
 answer: reject
 
-10. BOM stands for ________ ________ ________.
-answer: Browser Object Model
-
-11. What are the primitive data types in JavaScript.
-answer: Boolean, Null, Undefined, Number, String
-
-12. Strings can use _________-quoted, _________-quoted, and 
-________ literals.
-answer: single, double, template
+12. JavaScript Promise uses this function when
+the operation is successful.
+answer: resolve
 
 13. This JavaScript keyword is used to assign values once 
 and reassigning of values is not allowed.
@@ -54,30 +50,31 @@ answer: var
 16. It is a function passed to another function.
 answer: callback
 
-17. Bootstrap is an example of a CSS ________.
-answer: framework
+17. We use these tags to create a script.
+answer: <script></script>
 
 18. It is a block or statements that performs a task in JavaScript.
 answer: function
 
-19. SASS is an example of a CSS ________.
-answer: preprocessor
+19. Strings in JavaScript can use _________-quoted, _________-quoted, and 
+________ literals.
+answer: single, double, template
 
-20. This is used to apply CSS rules to a selected element/s
-answer: CSS selectors
+20. Event click belongs to ________.
+answer:	MouseEvent
 
-21. This CSS statement uses the @ sign.
-answer: at-rule
+21. What are the primitive data types in JavaScript.
+answer: Boolean, Null, Undefined, Number, String
 
-22. The CSS rule-set composes of a ________ and a ________
-answer: selector, declaration block
+22. While loop syntax in javascript.
+answer: while(condition) or do{}while(condition);
 
 23. It is when you can execute or manipulate the web page while 
 it is rendering.
 answer: async
 
-24. The three CSS keywords are ________, ________, and _______.
-answer: inherit, initial, unset
+24. The sytax we used to utilize a javascript that is outside of a html.
+answer: <script src = "filename.js">
 
-25. This CSS property is used to define transparency
-answer: opacity
+25. AJAX stands for ________ Javascript and XML
+answer: Asynchronous
