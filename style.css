@@ -1,3 +1,18 @@
 li{
 	list-style:none;
 }
+div#showScore{
+	position: absolute;
+	top: 50%;
+	right: 27%;
+	border-style: solid;
+	
+}
+div#showAnswer{
+	position: absolute;
+	top: 5%;
+	right: 25%;
+	border-style: solid;
+	
+}
+
