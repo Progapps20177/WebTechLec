@@ -1,9 +1,15 @@
-event handling
+Event Handling
 
-event propagation order(dom-compliant browsers)
-1. capturing phase netscape   addEventListener('click', hanler, true)
+Capturing - Event handler occurs first in the outermost element or ancestor of the target element,
+then going inside towards the target element.
+
+Bubbling - Event handler occurs first in the target element first then on the outer elements towards
+the outermost elmeent or ancestor.
+
+Event Propagation Order(dom-compliant browsers)
+1. capturing phase 
 2. at target 
-3. bubbling phase microsoft    addEventListener('click', handler)
+3. bubbling phase
  
 method 1 (inline html event attribute)
 
@@ -21,12 +27,12 @@ function handler(){
 var element = this;
 }
 
-event object properties and methods:
-bubbles
-eventphase
-target
-currenttarget
-preventdefault
-stoppropagation
-stopimeediatepropagation
-other event-specific information 
+Event Object Properties and Methods:
+1. Bubbles
+2. Eventphase
+3. Target
+4. Currenttarget
+5. Preventdefault
+6. Stoppropagation
+7. Stopimeediatepropagation
+8. other event-specific information 
