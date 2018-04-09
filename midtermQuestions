@@ -1,80 +1,109 @@
 1. CSS stands for C________ S_________ S__________ 
 answer: Cascading Style Sheets
+a. Cascading Style Sheets     b. Comparative Style Sheets     c. Cascading Styling Sheets 
 
 2. This CSS property is used to define transparency
 answer: opacity
+a. transparent      b. opacity      c. color
 
 3. The three type of styles are ________, _______, and _______ styles.
 answer: Author, User, User agent
+a. Author, User, User agent       b. Owner, user, agent     c. Author, Agent, User
 
 4. Bootstrap is an example of a CSS ________.
 answer: framework
+a. framework     b. preprocessors     c. polyfills
 
-5. The three CSS keywords are ________, ________, and _______.
-answer: inherit, initial, unset
-
-6. The CSS rule-set composes of a ________ and a ________
-answer: selector, declaration block
-
-7. This CSS statement uses the @ sign.
-answer: at-rule
-
-8. This is used to apply CSS rules to a selected element/s
-answer: CSS selectors
-
-9. SASS is an example of a CSS ________.
+5. SASS is an example of a CSS ________.
 answer: preprocessor
+a. framework     b.preprocessor      c. polyfills
+
+6. The three CSS keywords are ________, ________, and _______.
+answer: inherit, initial, unset
+a. inherit, uninitial, set     b. inherit, initial, unset     c. uninherit, initial, unset
+
+7. The CSS rule-set composes of a ________ and a ________
+answer: selector, declaration block
+a. select, declaration     b. seleced block, declaration     c. selector, declaration block
+
+8. This CSS statement uses the @ sign.
+answer: at-rule
+a. at-rule     b. of-rule     or-rule
+
+9. This is used to apply CSS rules to a selected element/s
+answer: CSS selectors
+a. CSS frameworks      b. CSS selectors     c. CSS Preprocessors
 
 10. This CSS data type is used for distance values
 answer: length
+a. angle     b. length     c. duration
 
 11. JavaScript Promise uses this function when 
 the operation failed
 answer: reject
+a.reject     b. declined     c. failure
 
 12. JavaScript Promise uses this function when
 the operation is successful.
 answer: resolve
+a.fulfilled     b. pending     c. resolve
 
 13. This JavaScript keyword is used to assign values once 
 and reassigning of values is not allowed.
 answer: const
+a. var     b. let     c. const
 
 14 This JavaScript keyword is used to assign a value that is
 limited to the block that is declared to.
 answer: let
+a. var     b. let     c. const
 
 15. This JavaScript keyword is used to declare a variable.
 answer: var
+a. var     b. let     c. const
 
 16. It is a function passed to another function.
 answer: callback
+a. promise     b. callback     resolve
 
 17. We use these tags to create a script.
 answer: <script></script>
+a. <script></script>     b. <div></div>     <jscript></jscript>
 
 18. It is a block or statements that performs a task in JavaScript.
 answer: function
+a. function     b. argument    c. parameters
 
 19. Strings in JavaScript can use _________-quoted, _________-quoted, and 
 ________ literals.
 answer: single, double, template
+a. single, double, triple     b. single, double, script    c. single, double, template
 
 20. Event click belongs to ________.
 answer:	MouseEvent
+a. DragEvent    b. WheelEvent     c. MouseEvent
 
 21. What are the primitive data types in JavaScript.
 answer: Boolean, Null, Undefined, Number, String
+a. Boolean, Null, Undefined, Number, String
+b. Boolean, Null, Undefined, Integer, String
+c. Boolean, Null, Undefined, Int, String
 
 22. While loop syntax in javascript.
 answer: while(condition) or do{}while(condition);
+a. while(condition) or for (condition
+b. for(condition)
+c. while(condition) or do{}while(condition)
 
 23. It is when you can execute or manipulate the web page while 
 it is rendering.
 answer: async
+a. sync     b. async     c. unsync
 
 24. The sytax we used to utilize a javascript that is outside of a html.
 answer: <script src = "filename.js">
+a.<script src = "filename.css">     b. <script src = "filename.html">    <script src = "filename.js">
 
 25. AJAX stands for ________ Javascript and XML
 answer: Asynchronous
+a. asynchronous     b. synchronous     c. unsynchronous
