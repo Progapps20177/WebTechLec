@@ -1,6 +1,6 @@
 <?php
-    $username = $POST['username'];
-    $password = $POST['password'];
+    $username = $_POST['user'];
+    $password = $_POST['pass'];
     
     $username = stripcslashes($username);
     $password = stripcslashes($password);
