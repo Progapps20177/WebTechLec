@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AJAX and Node.js Notes</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>AJAX and Node.js Notes</h1>
+		<h2>AJAX</h2>
+			<p>Description: AJAX is an acronym for Asynchronous JavaScript and XML. It can send and receive information in different data formats, such as HTML, JSON and others.
+			Its best characteristic is being able to update a page without having to reload it. For server communication, AJAX makes use of the XMLHTTPRequest object.</p>
+			<h3>4 Major Features:</h3>
+				<ul>
+					<li>Updates a page without reloading it.</li>
+					<li>Request or receive data from a server after loading a page.</li>
+					<li>Send data to a server while in the background.</li>
+				</ul>
+			<h3>How AJAX works:</h3>
+				<p>The browser loads the AJAX engine instead of a traditional web page. When the page has loaded, the engine continues running in the background while using JavaScript to
+				communicate with the browser. Whenever the user interacts with the page like clicking on the page, a JavaScript call is sent to the AJAX engine so it is prepared to respond instantly.
+				If additional data is required then the engine sends a request to the server through the XML while also updating the page.</p>
+			<h3>AJAX functions and methods</h3>
+				<h4>AJAX event methods</h4>
+					<p>.ajaxComplete() - registers a handler to be called when AJAX requests complete.</p>
+					<p>.ajaxError() - registers a handler to be called when AJAX requests complete with an error.</p>
+					<p>.ajaxSend() - attaches a function to be executed before an AJAX request is sent.</p>
+					<p>.ajaxStart() - registers a handler to be called when the first AJAX request begins.</p>
+					<p>.ajaxStop() - registers a handler to be called when all AJAX requests have completed.</p>
+					<p>.ajaxSuccess() - attaches a function to be executed whenever an AJAX request completes successfully.</p>
+					<br>
+				<p>jQuery.ajax() - performs an asynchronoues HTTP (AJAX) request.</p>
+				<p>jQuery.ajaxPrefilter() - handles custom AJAX options or modify existing options before each request is sent and before they are processed by $.ajax().</p>
+				<p>jQuery.ajaxSetup() - sets default values for future AJAX requests. Not recommended for use.</p>
+				<p>jQuery.ajaxTransport() - creates an object that handles the actual transmission of AJAX data.</p>
+		<br>
+		<h2>Node.js</h2>
+			<p>Description: Node.js is a JavaScript run-time environment which uses an event-driven, non-blocking I/O model that makes it light and effective. It is built on Chrome's V8 JavaScript engine.
+			A non-blocking I/O basically means that multiple data requests can be initiated in parallel or independently.</p>
+			<h3>HTTP</h3>
+				<p>To use the HTTP server and client then use <b>require('http')</b>.</p>
+				<h4>http.Agent methods</h4>
+					<p>new Agent([options])</p>
+					<p>agent.createConnection(options[,callback])</p>
+					<p>agent.keepSocketAlive(socket)</p>
+					<p>agent.reuseSocket(socket,request)</p>
+					<p>agent.destroy()</p>
+					<p>agent.freeSockets</p>
+					<p>agent.getName(options)</p>
+					<p>agent.maxFreeSockets</p>
+					<p>agent.maxSockets</p>
+					<p>agent.requests</p>
+					<p>agent.sockets</p>
+	</body>
+</html>
