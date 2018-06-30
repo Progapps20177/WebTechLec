@@ -1,0 +1,117 @@
+<HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div>
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search." name="search">
+      <button type="submit" value="Search"><img src="../search.png" width="15" height="15"></button>
+    </form>
+</div>
+<H1>EMPLOYEE'S LEAVE CARD</H1>
+<table width = "100%">
+<tr>
+<td width="50%">Name</td>
+<td>Civil Status</td>
+<td>GSIS Policy No.</td>
+</tr>
+<tr>
+<td>Position</td>
+<td>Entrance to Duty</td>
+<td>TIN No</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>Unit</td>
+<td>National Reference Card No.</td>
+</tr>
+</table> 
+<table border="1" cellspacing = 0 width="100%">
+<tr>
+<th> PERIOD </th>
+<th width="35%"> PARTICULARS </th>
+<th width="15%">
+<table class="internal" border="1" cellspacing="0" width="100%">
+<tr>
+<th id="vacation" colspan="4"> VACATION LEAVE</th>
+</tr>
+<tr>
+<th> EARNED </th>
+<th> Absence Undertime w/ Pay </th>
+<th> BALANCE </th>
+<th> Absence Undertime w/ o Pay </th>
+</tr>
+</table>
+</th>
+<th width="15%">
+<table class="internal" border="1" cellspacing="0" width="100%">
+<th id="sick" colspan="4"> SICK LEAVE </th>
+<tr>
+<th> EARNED </th>
+<th> Absence Undertime w/ Pay </th>
+<th> BALANCE </th>
+<th> Absence Undertime w/ o Pay </th>
+</tr>
+</table>
+</th>
+<th> REMARKS </th>
+</tr>
+<tr>
+<th> JUNE</th>
+<th> U<sup> 15</sup> 15<sup>10</sup></th>
+<th>
+<table class="internal" border="1" cellspacing="0" width="100%">
+<tr>
+<th width="21.3%">1.25  </th>
+<th width="27.3%"> 0.005 </th>
+<th width="25%"> 7.003 </th>
+<th> Absence Undertime w/ o Pay </th>
+</tr>
+</table>
+</th>
+<th>
+<table class="internal" border="1" cellspacing="0" width="100%">
+<tr>
+<th width="23.5%">1.25  </th>
+<th width="27.5%"> 0.25 </th>
+<th width="27%"> 1.00 </th>
+<th> Absence Undertime w/ o Pay </th>
+</tr>
+</table>
+</th>
+<th> REMARKS </th>
+</tr>
+</table>
+<div class="d-flex justify-content-md-end justify-content-between">
+      <div class="login"><a href="#" data-toggle="modal" data-target="#login-modal" class="login-btn"><i class="fa fa-sign-in"></i><span class="d-none d-md-inline-block">Sign In</span></a></div>
+</div>
+       <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true" class="modal fade">
+          <div role="document" class="modal-dialog">
+             <div class="modal-content">
+                  <div class="modal-header">
+                       <h4 id="login-modalLabel" class="modal-title">Customer Login</h4>
+                       <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true"> x </span></button>
+                   </div>
+              <div class="modal-body">
+                    <form action="customer-orders.html" method="get">
+                         <div class="form-group">
+                              <input id="email_modal" type="text" placeholder="email" class="form-control">
+                          </div>
+                          <div class="form-group">
+                               <input id="password_modal" type="password" placeholder="password" class="form-control">
+                          </div>
+                                <p class="text-center">
+                                    <button class="btn btn-template-outlined"><i class="fa fa-sign-in"></i> Log in</button>
+                                </p>
+                          </form>
+           </div>
+       </div>
+    </div>
+</div>
+</body>
+</HTML>
